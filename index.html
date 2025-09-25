@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CrossFit Baztan</title>
+  <style>
+    :root { --bg:#0f172a; --card:#1e293b; --text:#f1f5f9; --accent:#ef4444; }
+    body{margin:0;font-family:sans-serif;background:var(--bg);color:var(--text)}
+    header{padding:40px;text-align:center;background:#111827}
+    h1{margin:0;font-size:clamp(28px,5vw,46px)}
+    nav{margin-top:12px} nav a{margin:0 10px;color:var(--text);text-decoration:none;font-weight:600}
+    section{max-width:900px;margin:40px auto;padding:20px;background:var(--card);border-radius:12px}
+    h2{margin-top:0;color:var(--accent)}
+    .btn{display:inline-block;padding:12px 20px;background:var(--accent);color:white;text-decoration:none;border-radius:8px;font-weight:bold}
+    footer{text-align:center;padding:30px;color:#94a3b8}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CrossFit Baztan</h1>
+    <p>El box donde se forja la comunidad</p>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="nosotros">
+    <h2>Quiénes somos</h2>
+    <p>Un box pensado para todos los niveles, desde principiantes hasta atletas avanzados. 
+    Entrenamientos variados, entrenadores titulados y una comunidad que empuja fuerte.</p>
+  </section>
+
+  <section id="horarios">
+    <h2>Horarios</h2>
+    <ul>
+      <li>Lunes a Viernes: 7:00 – 22:00</li>
+      <li>Sábados: 9:00 – 14:00</li>
+      <li>Domingos: cerrado</li>
+    </ul>
+  </section>
+
+  <section id="precios">
+    <h2>Tarifas</h2>
+    <ul>
+      <li>Drop-in: 10 €</li>
+      <li>Bono 10 sesiones: 80 €</li>
+      <li>Mensualidad ilimitada: 70 €</li>
+    </ul>
+    <p><a href="https://calendly.com/" target="_blank" class="btn">Reserva prueba gratuita</a></p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:info@crossfitbaztan.com">info@crossfitbaztan.com</a></p>
+    <p>Dirección: Calle Mayor 123, Elizondo</p>
+    <p>Teléfono: 600 123 456</p>
+  </section>
+
+  <footer>
+    © <span id="y"></span> CrossFit Baztan
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
